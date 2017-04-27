@@ -17,18 +17,19 @@
 		<div class="container">
 		    <h3>发表评论</h3>
 		    <form method="post" action="/topic">
-		        <div class="form-group">
-		            <label >评论:</label>
-		            <input type="text" name="reply" class="form-control">
-		        </div>
+			    <div class="form-group">
+			        <label>评论:</label>
+			        <textarea  class="form-control" name="reply" cols="30" rows="10"></textarea>
+			    </div>
 		        <div class="form-group">
 		            <label >姓名:</label>
-		            <input type="text" class="form-control" name="username">
+		            <input type="text" name="name" class="form-control">
 		        </div>
 		        <div class="form-group">
-		            <label>电子邮件:</label>
-		            <textarea  class="form-control" name="email" cols="30" rows="10"></textarea>
+		            <label >电子邮件:</label>
+		            <input type="text" class="form-control" name="email">
 		        </div>
+		        
 		        <button type="submit"  class="btn btn-default">提交</button>
 		    </form>
 		
